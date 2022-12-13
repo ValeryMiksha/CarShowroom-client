@@ -97,7 +97,7 @@ public class StartController {
                     }
                     case CHECK_NOT_APPROVED:
                     {
-                        authorize.setText("You've been locked!Please contact some administrators!");
+                        authorize.setText("Вы заблокированы!");
                         break;
                     }
                     case NO_SUCH_USER:
@@ -122,7 +122,7 @@ public class StartController {
                 }
             }
             else
-                authorize.setText("Login or Password is empty");
+                authorize.setText("Логин или пароль неправильный");
         });
 
         registrationButton.setOnAction(actionEvent -> {
@@ -184,64 +184,5 @@ public class StartController {
 
         return temp;
     }
-
-//    private void loginUser(String login,String password)
-//    {
-//        try{
-//            User user = new User();
-//            user.USERNAME = login;
-//            user.PASSWORD = password;
-//            user.TYPE = User.PressedBtnType.SignUn;
-//
-//            ClientConnection.writer.writeObject(user);
-//            User recvUser = (User)ClientConnection.reader.readObject();
-//            System.out.println(recvUser.ADMINCODE);
-//            if(recvUser.ADMINCODE != null && !recvUser.Locked.equals("true"))
-//            {
-//                FXMLLoader loader = new FXMLLoader();
-//                loader.setLocation(getClass().getResource("AdminUI.fxml"));
-//
-//                try {
-//                    loader.load();
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//
-//                Parent root = loader.getRoot();
-//                Stage stage = new Stage();
-//                stage.setScene(new Scene(root));
-//                stage.showAndWait();
-//            }else {
-//                if (recvUser.IsOnline && !recvUser.Locked.equals("true")) {
-//                    Kursach.currentUser.USERNAME = login;
-//                    Kursach.currentUser.PASSWORD = password;
-//                    Kursach.id = recvUser.id;
-//                    Kursach.currentUser.IsOnline = true;
-//                    RegistationBtn.getScene().getWindow().hide();
-//
-//                    FXMLLoader loader = new FXMLLoader();
-//                    loader.setLocation(getClass().getResource("UserUI.fxml"));
-//
-//                    try {
-//                        loader.load();
-//                    } catch (IOException e) {
-//                        e.printStackTrace();
-//                    }
-//
-//                    Parent root = loader.getRoot();
-//                    Stage stage = new Stage();
-//                    stage.setScene(new Scene(root));
-//                    stage.showAndWait();
-//                } else
-//                    Autorize.setText("User don't exist or wrong password/login");
-//            }
-//        } catch (ClassNotFoundException e) {
-//            e.printStackTrace();
-//        } catch (IOException e)
-//        {
-//            e.printStackTrace();
-//        }
-//
-//    }
 
 }

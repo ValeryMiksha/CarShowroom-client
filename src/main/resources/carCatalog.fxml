@@ -28,9 +28,9 @@
                 <Font size="10.0" />
             </font>
         </Button>
-        <Button fx:id="profileButton" layoutX="487.0" layoutY="39.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" text="Profile" />
-        <Button fx:id="commentButton" layoutX="371.0" layoutY="39.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" text="Comment" />
-        <Label layoutX="60.0" layoutY="41.0" text="Cars catalog">
+        <Button fx:id="profileButton" layoutX="487.0" layoutY="39.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" text="Профиль" />
+        <Button fx:id="commentButton" layoutX="371.0" layoutY="39.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" text="Открыть" />
+        <Label layoutX="60.0" layoutY="41.0" text="Каталог">
             <font>
                 <Font size="18.0" />
             </font>

@@ -4,10 +4,10 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="204.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CommentFormController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="399.0" style="-fx-background-color: #A2E3C4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CommentFormController">
     <children>
-        <TextField fx:id="textField" layoutX="248.0" layoutY="82.0" prefHeight="50.0" prefWidth="178.0" />
-        <Label  fx:id="commentLabel" layoutX="56.0" layoutY="79.0" prefHeight="56.0" prefWidth="140.0" text="Label" />
+        <TextField fx:id="textField" layoutX="196.0" layoutY="29.0" prefHeight="50.0" prefWidth="178.0" />
+        <Label fx:id="commentLabel" layoutX="51.0" layoutY="41.0" prefHeight="26.0" prefWidth="130.0" text="Введите комментарий:" />
+      <Label layoutX="184.0" layoutY="89.0" text="Нажмите &quot;Enter&quot; для подтверждения" />
     </children>
 </Pane>

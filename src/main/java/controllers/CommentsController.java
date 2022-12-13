@@ -225,7 +225,7 @@ public class CommentsController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-            stage.setTitle("Comment");
+            stage.setTitle("Комменарий");
             stage.show();
 
         });
@@ -238,7 +238,7 @@ public class CommentsController {
 
         orderButton.setOnAction(actionEvent -> {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/fillerFromValeraRequest.fxml"));
+            loader.setLocation(getClass().getResource("/fillerFromRequest.fxml"));
 
             try {
                 loader.load();
@@ -248,7 +248,7 @@ public class CommentsController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-            stage.setTitle("Sure? Hi-hi-hi");
+            stage.setTitle("Заказ");
             stage.show();
 
         });

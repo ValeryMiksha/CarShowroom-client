@@ -25,7 +25,7 @@ public class CommentFormController {
 
     @FXML
     void initialize() {
-        commentLabel.setText("Write your comment here:");
+        commentLabel.setText("Введите комментарий:");
 
         textField.setOnKeyPressed(keyEvent -> {
             if (keyEvent.getCode() == KeyCode.ENTER)

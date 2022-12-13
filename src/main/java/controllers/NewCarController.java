@@ -57,14 +57,14 @@ public class NewCarController {
     @FXML
     private ChoiceBox<Integer> engineVolumeChoiceBox;
 
-    private final ObservableList<String> choicesForTransmission = FXCollections.observableArrayList("Auto", "Mechanic");
+    private final ObservableList<String> choicesForTransmission = FXCollections.observableArrayList("Автомат", "Механика");
 
-    private final ObservableList<Integer> choicesForEngineVolume = FXCollections.observableArrayList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
+    private final ObservableList<Integer> choicesForEngineVolume = FXCollections.observableArrayList(1, 2, 3, 4, 5, 6, 7, 8);
 
     @FXML
     void initialize() {
         transmissionChoiceBox.setItems(choicesForTransmission);
-        transmissionChoiceBox.setValue("Mechanic");
+        transmissionChoiceBox.setValue("Механика");
 
         engineVolumeChoiceBox.setItems(choicesForEngineVolume);
         engineVolumeChoiceBox.setValue(5);

@@ -6,45 +6,45 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="286.0" prefWidth="428.0" style="-fx-background-color: #A2E3C4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserController">
+<AnchorPane prefHeight="240.0" prefWidth="428.0" style="-fx-background-color: #A2E3C4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserController">
     <children>
-        <AnchorPane fx:id="pane" layoutX="-7.0" layoutY="84.0" prefHeight="232.0" prefWidth="435.0" style="-fx-background-color: #A2E3C4;">
+        <AnchorPane fx:id="pane" layoutX="-7.0" layoutY="84.0" prefHeight="169.0" prefWidth="435.0" style="-fx-background-color: #A2E3C4;">
             <children>
-                <Label fx:id="emailLabel" layoutX="93.0" layoutY="24.0" prefHeight="29.0" prefWidth="69.0" text="Email">
+                <Label fx:id="emailLabel" layoutX="93.0" layoutY="24.0" prefHeight="29.0" prefWidth="69.0" text="Почта">
                     <font>
                         <Font size="14.0" />
                     </font>
                 </Label>
-                <Label fx:id="loginLabel" layoutX="93.0" layoutY="59.0" prefHeight="30.0" prefWidth="114.0" text="Login">
+                <Label fx:id="loginLabel" layoutX="93.0" layoutY="59.0" prefHeight="30.0" prefWidth="114.0" text="Логин">
                     <font>
                         <Font size="14.0" />
                     </font>
                 </Label>
-                <Button fx:id="changePasswordButton" layoutX="93.0" layoutY="171.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="114.0" text="Edit password" />
-                <Label fx:id="mailField" layoutX="260.0" layoutY="24.0" prefHeight="30.0" prefWidth="161.0" text="...">
+                <Button fx:id="changePasswordButton" layoutX="93.0" layoutY="114.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="114.0" text="Изменить пароль" />
+                <Label fx:id="mailField" layoutX="210.0" layoutY="23.0" prefHeight="30.0" prefWidth="99.0" text="...">
                     <font>
                         <Font size="14.0" />
                     </font>
                 </Label>
-                <Label fx:id="loginField" layoutX="260.0" layoutY="59.0" prefHeight="30.0" prefWidth="162.0" text="..." textFill="#080101">
+                <Label fx:id="loginField" layoutX="210.0" layoutY="59.0" prefHeight="30.0" prefWidth="99.0" text="..." textFill="#080101">
                     <font>
                         <Font size="14.0" />
                     </font>
                 </Label>
-                <TextField fx:id="changePasswordField" layoutX="238.0" layoutY="173.0" prefHeight="26.0" prefWidth="99.0" promptText="*******" />
+                <TextField fx:id="changePasswordField" layoutX="239.0" layoutY="116.0" prefHeight="26.0" prefWidth="99.0" promptText="*******" />
             </children>
         </AnchorPane>
-        <Label layoutX="20.0" layoutY="22.0" prefHeight="42.0" prefWidth="191.0" text="User Profile" textFill="#180909">
+        <Label layoutX="51.0" layoutY="22.0" prefHeight="42.0" prefWidth="114.0" text="Профиль" textFill="#180909">
             <font>
                 <Font size="18.0" />
             </font>
         </Label>
-        <Button fx:id="exitButton" layoutX="386.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="42.0" text="Quit">
+        <Button fx:id="exitButton" layoutX="386.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="42.0" text="Выход">
             <font>
                 <Font size="10.0" />
             </font>
         </Button>
-        <Button fx:id="catalogButton" layoutX="293.0" layoutY="28.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="81.0" text="Catalog" />
-        <Button fx:id="wishListButton" layoutX="220.0" layoutY="28.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="81.0" text="WishList" />
+        <Button fx:id="catalogButton" layoutX="302.0" layoutY="28.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="81.0" text="Каталог" />
+        <Button fx:id="wishListButton" layoutX="220.0" layoutY="28.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="81.0" text="Избранное" />
     </children>
 </AnchorPane>

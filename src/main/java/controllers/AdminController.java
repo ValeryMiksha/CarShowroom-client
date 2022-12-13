@@ -299,22 +299,24 @@ public class AdminController {
 
         blockButton.setOnAction(actionEvent -> {
             User userToBlock = userTable.getSelectionModel().getSelectedItem();
+            if(userToBlock!=null) {
 
-            Connection.writeObject(userToBlock, Commands.ChangeUserStatus);
+                Connection.writeObject(userToBlock, Commands.ChangeUserStatus);
 
-            blockButton.getScene().getWindow().hide();
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/admin.fxml"));
+                blockButton.getScene().getWindow().hide();
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("/admin.fxml"));
 
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
+                try {
+                    loader.load();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                Parent root = loader.getRoot();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.show();
             }
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
         });
 
 
@@ -379,50 +381,6 @@ public class AdminController {
             stage.show();
 
         });
-//        statisticsButton.setOnAction(actionEvent -> {
-//            User userToBlock = makeUserInfo("", "", "", false, false);
-//
-//            Connection.writeObject(userToBlock, Commands.GetStatistics);
-//
-//            DtoLoginComment var2 = null;
-//            List<DtoLoginComment> statistics = new ArrayList<>();
-//
-//            while (true) {
-//                String info = Connection.readObject();
-//                if (info != null) {
-//                    JSONObject obj = new JSONObject(info);
-//                    Map<String, Object> parseMap = obj.toMap();
-//                    int command = (int) parseMap.get("command");
-//                    if (command == STATISTICS_SENT) {
-//                        for (Map.Entry<String, Object> temp : parseMap.entrySet()) {
-//                            if (temp.getKey().equals("command"))
-//                                break;
-//                            var2 = new DtoLoginComment();
-//                            var2.setLogin(temp.getKey());
-//                            if (temp.getValue() instanceof String)
-//                                var2.setComment(temp.getValue().toString());
-//                            statistics.add(var2);
-//                        }
-//
-//                    }
-//                }
-//                break;
-//            }
-//        try (FileWriter writer = new FileWriter("statistics.txt", false)) {
-//            for (DtoLoginComment temp : statistics) {
-//                String login = temp.getLogin();
-//                String content = temp.getComment();
-//                writer.write(login + '|');
-//                writer.write(content + '\n');
-//            }
-//
-//            writer.flush();
-//        } catch (IOException ex) {
-//
-//            System.out.println(ex.getMessage());
-//        }
-//    });
-
 
         messagesButton.setOnAction(actionEvent -> {
             messagesButton.getScene().getWindow().hide();

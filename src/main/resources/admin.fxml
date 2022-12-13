@@ -11,15 +11,15 @@
     <children>
         <AnchorPane fx:id="pane" layoutX="-7.0" layoutY="84.0" prefHeight="511.0" prefWidth="786.0" style="-fx-background-color: #A2E3C4;">
             <children>
-                <TableView fx:id="userTable" layoutX="65.0" layoutY="266.0" prefHeight="163.0" prefWidth="398.0">
+                <TableView fx:id="userTable" layoutX="64.0" layoutY="272.0" prefHeight="163.0" prefWidth="476.0">
                     <columns>
-                        <TableColumn fx:id="userId" prefWidth="50.0" text="Id" />
-                        <TableColumn fx:id="userLogin" prefWidth="139.0" text="Login" />
-                        <TableColumn fx:id="locked" prefWidth="97.0" text="Locked" />
+                        <TableColumn fx:id="userId" prefWidth="72.00000381469727" text="Id" />
+                        <TableColumn fx:id="userLogin" prefWidth="215.1999969482422" text="Login" />
+                        <TableColumn fx:id="locked" prefWidth="188.00006103515625" text="Locked" />
                     </columns>
                 </TableView>
-                <Button fx:id="blockButton" layoutX="207.0" layoutY="441.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="114.0" text="Change user status" />
-                <TableView fx:id="carsTable" layoutX="26.0" layoutY="19.0" prefHeight="225.0" prefWidth="476.0">
+                <Button fx:id="blockButton" layoutX="201.0" layoutY="449.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="201.0" text="Заблокировать/Разблокировать" />
+                <TableView fx:id="carsTable" layoutX="64.0" layoutY="19.0" prefHeight="225.0" prefWidth="476.0">
                     <columns>
                         <TableColumn fx:id="id" prefWidth="52.0" text="Id" />
                         <TableColumn fx:id="vendor" prefWidth="90.4000244140625" text="Company" />
@@ -29,11 +29,11 @@
                         <TableColumn fx:id="volume" prefWidth="78.39996337890625" text="Volume" />
                     </columns>
                 </TableView>
-                <Button fx:id="addButton" layoutX="573.0" layoutY="63.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Add car" />
-                <Button fx:id="deleteButton" layoutX="572.0" layoutY="106.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="126.0" text="Delete car" />
-            <Button fx:id="updateButton" layoutX="572.0" layoutY="151.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="126.0" text="Update car" />
-            <Button fx:id="messagesButton" layoutX="572.0" layoutY="368.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="126.0" text="Messages" />
-            <Button fx:id="statisticsButton" layoutX="572.0" layoutY="308.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="126.0" text="Statistics" />
+                <Button fx:id="addButton" layoutX="594.0" layoutY="64.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Добавить авто" />
+                <Button fx:id="deleteButton" layoutX="594.0" layoutY="106.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="126.0" text="Удалить авто" />
+            <Button fx:id="updateButton" layoutX="594.0" layoutY="151.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="126.0" text="Редактировать авто" />
+            <Button fx:id="messagesButton" layoutX="594.0" layoutY="368.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="126.0" text="Сообщения" />
+            <Button fx:id="statisticsButton" layoutX="594.0" layoutY="328.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="126.0" text="Записать статистику" />
             </children>
         </AnchorPane>
         <Label layoutX="52.0" layoutY="27.0" text="Administrator" textFill="#100909">
@@ -41,7 +41,7 @@
                 <Font size="27.0" />
             </font>
         </Label>
-        <Button fx:id="refreshButton" layoutX="280.0" layoutY="33.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" text="Refresh" />
-      <Button fx:id="exitButton" layoutX="653.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Exit" />
+        <Button fx:id="refreshButton" layoutX="624.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" text="Перезагрузка" />
+      <Button fx:id="exitButton" layoutX="736.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="43.0" text="Exit" />
     </children>
 </AnchorPane>

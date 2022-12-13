@@ -94,40 +94,6 @@ public class UserController {
         loginField.setText(userInfo.getLogin());
         mailField.setText(userInfo.getEmail());
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//        profileButton.setOnAction( actionEvent -> {
-//
-//            profileButton.getScene().getWindow().hide();
-//            FXMLLoader loader = new FXMLLoader();
-//            loader.setLocation(getClass().getResource("UserUI.fxml"));
-//
-//            try {
-//                loader.load();
-//            }catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//            Parent root = loader.getRoot();
-//            Stage stage = new Stage();
-//            stage.setScene(new Scene(root));
-//            stage.show();
-//
-//        });
         changePasswordButton.setOnAction(actionEvent -> {
             String newPassword=changePasswordField.getText();
             User userForRequest1=makeUserInfo(User.getCurrentUserLogin(),newPassword,mailField.getText(),false,false);
@@ -180,57 +146,6 @@ public class UserController {
             stage.setScene(new Scene(root));
             stage.show();
         });
-
-        /*WishList_btn.setOnAction( actionEvent -> {
-
-            WishList_btn.getScene().getWindow().hide();
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("CartUI.fxml"));
-
-            try {
-                loader.load();
-            }catch (IOException e) {
-                e.printStackTrace();
-            }
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
-        });*/
-
-        /*Chat_btn.setOnAction( actionEvent -> {
-
-            Chat_btn.getScene().getWindow().hide();
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("ChatUI.fxml"));
-
-            try {
-                loader.load();
-            }catch (IOException e) {
-                e.printStackTrace();
-            }
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
-        });
-
-        Statistic_btn.setOnAction( actionEvent -> {
-
-            Statistic_btn.getScene().getWindow().hide();
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("StatisticUI.fxml"));
-
-            try {
-                loader.load();
-            }catch (IOException e) {
-                e.printStackTrace();
-            }
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
-        });*/
 
         exitButton.setOnAction(actionEvent -> {
 

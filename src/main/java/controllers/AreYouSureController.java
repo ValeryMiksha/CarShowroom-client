@@ -18,17 +18,17 @@ public class AreYouSureController {
     @FXML
     private Button confirmButton;
 
-    private final ObservableList<String>choices= FXCollections.observableArrayList("Yes","No");
+    private final ObservableList<String>choices= FXCollections.observableArrayList("Да","Нет");
 
     @FXML
     void initialize()
     {
         choice.setItems(choices);
-        choice.setValue("No");
+        choice.setValue("Нет");
 
         confirmButton.setOnAction(actionEvent -> {
             String decision=choice.getValue();
-            if(decision.equals("Yes"))
+            if(decision.equals("Да"))
             {
                 User userForRequest = makeUserInfo(User.getCurrentUserLogin(),String.valueOf(Car.getCurrentCarId()), "",  false, false);
                 Connection.writeObject(userForRequest, Commands.AddOrder);
