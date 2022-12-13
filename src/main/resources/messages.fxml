@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="459.0" prefWidth="535.0" style="-fx-background-color: #A2E3C4;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MessagesController">
+    <children>
+        <AnchorPane fx:id="pane" layoutX="-7.0" layoutY="84.0" prefHeight="388.0" prefWidth="542.0" style="-fx-background-color: #A2E3C4;">
+            <children>
+                <TableView fx:id="productTable" layoutX="40.0" layoutY="3.0" prefHeight="375.0" prefWidth="462.0">
+                    <columns>
+                        <TableColumn fx:id="userLogin" prefWidth="79.0" text="Login" />
+                        <TableColumn fx:id="content" prefWidth="382.0" text="Content" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <Button fx:id="exitButton" layoutX="489.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="45.0" text="Exit">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Button>
+        <Button fx:id="profileButton" layoutX="389.0" layoutY="39.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" text="Profile" />
+        <Label fx:id="label" layoutX="60.0" layoutY="41.0" text="Messages">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewCarController">
+    <children>
+        <Button fx:id="applyButton" layoutX="442.0" layoutY="314.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="90.0" text="Apply" />
+        <Label fx:id="vendorLabel" layoutX="92.0" layoutY="44.0" prefHeight="54.0" prefWidth="98.0" text="New car vendor:" />
+        <TextField fx:id="vendorField" layoutX="200.0" layoutY="64.0" />
+        <Label fx:id="modelLabel" layoutX="92.0" layoutY="98.0" prefHeight="54.0" prefWidth="98.0" text="New car model:" />
+        <TextField fx:id="modelField" layoutX="200.0" layoutY="112.0" />
+        <Label fx:id="transmissionLabel" layoutX="92.0" layoutY="146.0" prefHeight="54.0" prefWidth="98.0" text="Transmission:" />
+        <ChoiceBox fx:id="transmissionChoiceBox" layoutX="201.0" layoutY="160.0" prefWidth="150.0" />
+        <Label fx:id="yearLabel" layoutX="92.0" layoutY="188.0" prefHeight="54.0" prefWidth="98.0" text="Year of issue:" />
+        <TextField fx:id="yearField" layoutX="200.0" layoutY="202.0" />
+        <Label fx:id="priceLabel" layoutX="92.0" layoutY="236.0" prefHeight="54.0" prefWidth="98.0" text="Price:" />
+        <TextField fx:id="priceField" layoutX="200.0" layoutY="250.0" />
+        <Label fx:id="engineVolumeLabel" layoutX="86.0" layoutY="287.0" prefHeight="54.0" prefWidth="98.0" text="Engine volume" />
+        <ChoiceBox fx:id="engineVolumeChoiceBox" layoutX="201.0" layoutY="300.0" prefWidth="150.0" />
+    </children>
+</Pane>
