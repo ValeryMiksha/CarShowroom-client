@@ -46,6 +46,7 @@ public class StartController {
     private final int CHECK_APPROVED_NOT_ADMIN=1;
     private final int CHECK_APPROVED_IS_ADMIN=2;
     private final int CHECK_NOT_APPROVED=3;
+    private final int NO_SUCH_USER=8;
 
     @FXML
     void initialize() {
@@ -59,6 +60,7 @@ public class StartController {
                 {
                     case CHECK_APPROVED_IS_ADMIN:
                     {
+                        registrationButton.getScene().getWindow().hide();
                         FXMLLoader loader = new FXMLLoader();
                         loader.setLocation(getClass().getResource("/admin.fxml"));
 
@@ -71,7 +73,7 @@ public class StartController {
                         Parent root = loader.getRoot();
                         Stage stage = new Stage();
                         stage.setScene(new Scene(root));
-                        stage.showAndWait();
+                        stage.show();
                         break;
                     }
                     case CHECK_APPROVED_NOT_ADMIN:
@@ -90,12 +92,31 @@ public class StartController {
                         Parent root = loader.getRoot();
                         Stage stage = new Stage();
                         stage.setScene(new Scene(root));
-                        stage.showAndWait();
+                        stage.show();
                         break;
                     }
                     case CHECK_NOT_APPROVED:
                     {
                         authorize.setText("You've been locked!Please contact some administrators!");
+                        break;
+                    }
+                    case NO_SUCH_USER:
+                    {
+                        authorize.getScene().getWindow().hide();
+
+                        FXMLLoader loader = new FXMLLoader();
+                        loader.setLocation(getClass().getResource("/home.fxml"));
+
+                        try {
+                            loader.load();
+                        }catch (IOException e) {
+                            e.printStackTrace();
+                        }
+
+                        Parent root = loader.getRoot();
+                        Stage stage = new Stage();
+                        stage.setScene(new Scene(root));
+                        stage.show();
                         break;
                     }
                 }
@@ -144,6 +165,8 @@ public class StartController {
                             return CHECK_APPROVED_IS_ADMIN;
                         return CHECK_APPROVED_NOT_ADMIN;
                     }
+                    if (command == NO_SUCH_USER)
+                        return NO_SUCH_USER;
                 }
                 break;
             }

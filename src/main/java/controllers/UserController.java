@@ -97,171 +97,19 @@ public class UserController {
 
 
 
-/*
-        if(Kursach.IsLightTheme)
-            ActorP.setStyle(ThemeAndLanguage.Light);
-        else
-            ActorP.setStyle(ThemeAndLanguage.Dark);
-
-
-        if(Kursach.IsRussionLanguage)
-        {
-            Profile_btn.setText(ThemeAndLanguage.ProfileBtn);
-            Product_btn.setText(ThemeAndLanguage.ProductBtn);
-            WishList_btn.setText(ThemeAndLanguage.WishlistBtn);
-            Chat_btn.setText(ThemeAndLanguage.ChatBtn);
-            Statistic_btn.setText(ThemeAndLanguage.StatisticBtn);
-            Exit_btn.setText(ThemeAndLanguage.ExitBtn);
-
-
-            One.setText(ThemeAndLanguage.Firstname);
-            Two.setText(ThemeAndLanguage.Lastname);
-            Three.setText(ThemeAndLanguage.Gender);
-            Four.setText(ThemeAndLanguage.Username);
-            Five.setText(ThemeAndLanguage.Balance);
-
-
-            UpBalance_btn.setText(ThemeAndLanguage.AddBalanceBtn);
-            ChangePassword_btn.setText(ThemeAndLanguage.ChangePasswordBtn);
-            ChangeBalance_Field.setPromptText(ThemeAndLanguage.PromAddBalance);
-            ChangePassword_Field.setPromptText(ThemeAndLanguage.PromChangePassword);
-
-        }else {
-
-            Profile_btn.setText(ThemeAndLanguage.ProfileBtnAngl);
-            Product_btn.setText(ThemeAndLanguage.ProductBtnAngl);
-            WishList_btn.setText(ThemeAndLanguage.WishlistBtnAngl);
-            Chat_btn.setText(ThemeAndLanguage.ChatBtnAngl);
-            Statistic_btn.setText(ThemeAndLanguage.StatisticBtnAngl);
-            Exit_btn.setText(ThemeAndLanguage.ExitBtnAngl);
-
-
-            One.setText(ThemeAndLanguage.FirstnameAngl);
-            Two.setText(ThemeAndLanguage.LastnameAngl);
-            Three.setText(ThemeAndLanguage.GenderAngl);
-            Four.setText(ThemeAndLanguage.UsernameAngl);
-            Five.setText(ThemeAndLanguage.BalanceAngl);
-
-
-            UpBalance_btn.setText(ThemeAndLanguage.AddBalanceBtnAngl);
-            ChangePassword_btn.setText(ThemeAndLanguage.ChangePasswordBtnAngl);
-            ChangeBalance_Field.setPromptText(ThemeAndLanguage.PromAddBalanceAngl);
-            ChangePassword_Field.setPromptText(ThemeAndLanguage.PromChangePasswordAngl);
-        }*/
-
-
-       /* Kursach.currentUser.TYPE = User.PressedBtnType.InitUser;
-        try {
-            ClientConnection.writer.writeObject(Kursach.currentUser);
-            Kursach.currentUser = (User)ClientConnection.reader.readObject();
-
-            Mail_Field.setText(Kursach.currentUser.MAIL);
-            Phonenumber_Field.setText(Kursach.currentUser.PHONENUMBER);
-            UserName_Field.setText(Kursach.currentUser.USERNAME);
-
-        } catch (IOException e)
-        {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) { e.printStackTrace(); }*/
 
 
 
 
-        /*ChangePassword_btn.setOnAction(actionEvent -> {
-            try {
-                if(!ChangePassword_Field.equals("") && !ChangePassword_Field.equals(Kursach.currentUser.PASSWORD))
-                {
-                    Kursach.currentUser.TYPE = User.PressedBtnType.ChangePassword;
-                    Kursach.currentUser.PASSWORD = ChangePassword_Field.getText().trim();
-
-                    ClientConnection.writer.writeObject(Kursach.currentUser);
-                    ChangePassword_Field.setText("РџР°СЂРѕР»СЊ РёР·РјРµРЅРµРЅ");
-                }
-                else
-                {
-                    ChangePassword_Field.setPromptText("Р’С‹ РЅРёС‡РµРіРѕ РЅРµ РІРІРµР»Рё Р»РёР±Рѕ РёСЃРїРѕР»СЊР·СѓРµС‚Рµ СЃС‚Р°СЂС‹Р№ РїР°СЂРѕР»СЊ");
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-        });*/
-
-       /* UpBalance_btn.setOnAction( actionEvent -> {
-            try {
-                if (!ChangeBalance_Field.equals("")) {
-                    Kursach.ThisUser.TYPE = User.PressedBtnType.AddBalance;
-                    Kursach.ThisUser.TempAddBalance = ChangeBalance_Field.getText().trim();
-                    ClientConnection.writer.writeObject(Kursach.ThisUser);
-
-                    ChangeBalance_Field.setText("РћР¶РёРґР°Р№С‚Рµ РѕР±СЂР°Р±РѕС‚РєРё Р·Р°РїСЂРѕСЃР°");
-                } else {
-                    ChangePassword_Field.setPromptText("Р’С‹ РЅРёС‡РµРіРѕ РЅРµ РІРІРµР»Рё");
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-        });*/
-
-       /* Language.setOnAction(actionEvent -> {
-            if(Kursach.IsRussionLanguage){
-                Kursach.IsRussionLanguage = false;
-
-                Profile_btn.setText(ThemeAndLanguage.ProfileBtnAngl);
-                Product_btn.setText(ThemeAndLanguage.ProductBtnAngl);
-                WishList_btn.setText(ThemeAndLanguage.WishlistBtnAngl);
-                Chat_btn.setText(ThemeAndLanguage.ChatBtnAngl);
-                Statistic_btn.setText(ThemeAndLanguage.StatisticBtnAngl);
-                Exit_btn.setText(ThemeAndLanguage.ExitBtnAngl);
 
 
-                One.setText(ThemeAndLanguage.FirstnameAngl);
-                Two.setText(ThemeAndLanguage.LastnameAngl);
-                Three.setText(ThemeAndLanguage.GenderAngl);
-                Four.setText(ThemeAndLanguage.UsernameAngl);
-                Five.setText(ThemeAndLanguage.BalanceAngl);
 
 
-                UpBalance_btn.setText(ThemeAndLanguage.AddBalanceBtnAngl);
-                ChangePassword_btn.setText(ThemeAndLanguage.ChangePasswordBtnAngl);
-                ChangeBalance_Field.setPromptText(ThemeAndLanguage.PromAddBalanceAngl);
-                ChangePassword_Field.setPromptText(ThemeAndLanguage.PromChangePasswordAngl);
-
-            }else{
-                Kursach.IsRussionLanguage = true;
-
-                Profile_btn.setText(ThemeAndLanguage.ProfileBtn);
-                Product_btn.setText(ThemeAndLanguage.ProductBtn);
-                WishList_btn.setText(ThemeAndLanguage.WishlistBtn);
-                Chat_btn.setText(ThemeAndLanguage.ChatBtn);
-                Statistic_btn.setText(ThemeAndLanguage.StatisticBtn);
-                Exit_btn.setText(ThemeAndLanguage.ExitBtn);
 
 
-                One.setText(ThemeAndLanguage.Firstname);
-                Two.setText(ThemeAndLanguage.Lastname);
-                Three.setText(ThemeAndLanguage.Gender);
-                Four.setText(ThemeAndLanguage.Username);
-                Five.setText(ThemeAndLanguage.Balance);
 
 
-                UpBalance_btn.setText(ThemeAndLanguage.AddBalanceBtn);
-                ChangePassword_btn.setText(ThemeAndLanguage.ChangePasswordBtn);
-                ChangeBalance_Field.setPromptText(ThemeAndLanguage.PromAddBalance);
-                ChangePassword_Field.setPromptText(ThemeAndLanguage.PromChangePassword);
-            }
-        });
 
-        Theme.setOnAction(actionEvent -> {
-            if(Kursach.IsLightTheme){
-                Kursach.IsLightTheme = false;
-                ActorP.setStyle(ThemeAndLanguage.Dark);
-            }else{
-                Kursach.IsLightTheme = true;
-                ActorP.setStyle(ThemeAndLanguage.Light);
-            }
-        });*/
 
 //        profileButton.setOnAction( actionEvent -> {
 //
@@ -318,6 +166,7 @@ public class UserController {
 
         });
         wishListButton.setOnAction(actionEvent -> {
+            wishListButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/wishList.fxml"));
 

@@ -130,27 +130,28 @@ public class CatalogController {
 
         commentButton.setOnAction(actionEvent ->
         {
+            if(productTable.getSelectionModel().getSelectedItem()!=null) {
+                Car.setCurrentCarId(productTable.getSelectionModel().getSelectedItem().getId());
+                Car.setCurrentCarModel(productTable.getSelectionModel().getSelectedItem().getModel());
+                Car.setCurrentCarVendor(productTable.getSelectionModel().getSelectedItem().getVendor());
+                Car.setCurrentCarPrice(productTable.getSelectionModel().getSelectedItem().getPrice());
+                Car.setCurrentCarVolume(productTable.getSelectionModel().getSelectedItem().getEngineVolume());
+                Car.setCurrentCarYearOfIssue(productTable.getSelectionModel().getSelectedItem().getYearOfIssue());
 
-            Car.setCurrentCarId(productTable.getSelectionModel().getSelectedItem().getId());
-            Car.setCurrentCarModel(productTable.getSelectionModel().getSelectedItem().getModel());
-            Car.setCurrentCarVendor(productTable.getSelectionModel().getSelectedItem().getVendor());
-            Car.setCurrentCarPrice(productTable.getSelectionModel().getSelectedItem().getPrice());
-            Car.setCurrentCarVolume(productTable.getSelectionModel().getSelectedItem().getEngineVolume());
-            Car.setCurrentCarYearOfIssue(productTable.getSelectionModel().getSelectedItem().getYearOfIssue());
+                commentButton.getScene().getWindow().hide();
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("/comments.fxml"));
 
-            commentButton.getScene().getWindow().hide();
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/comments.fxml"));
-
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
+                try {
+                    loader.load();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                Parent root = loader.getRoot();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.show();
             }
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
 
         });
 

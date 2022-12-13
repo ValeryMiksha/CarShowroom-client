@@ -248,48 +248,53 @@ public class AdminController {
 
 
         updateButton.setOnAction(actionEvent -> {
-            Car selectedCar = carsTable.getSelectionModel().getSelectedItem();
-            Car.setCurrentCarPrice(selectedCar.getPrice());
-            Car.setCurrentCarVolume(selectedCar.getEngineVolume());
-            Car.setCurrentCarModel(selectedCar.getModel());
-            Car.setCurrentCarYearOfIssue(selectedCar.getYearOfIssue());
-            Car.setCurrentCarVendor(selectedCar.getVendor());
-            Car.setCurrentCarTransmission(selectedCar.getTransmission());
-            Car.setCurrentCarId(selectedCar.getId());
-            AdminController.setUpdatingFlag(true);
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/newCar.fxml"));
+            if(carsTable.getSelectionModel().getSelectedItem()!=null) {
+                Car selectedCar = carsTable.getSelectionModel().getSelectedItem();
+                Car.setCurrentCarPrice(selectedCar.getPrice());
+                Car.setCurrentCarVolume(selectedCar.getEngineVolume());
+                Car.setCurrentCarModel(selectedCar.getModel());
+                Car.setCurrentCarYearOfIssue(selectedCar.getYearOfIssue());
+                Car.setCurrentCarVendor(selectedCar.getVendor());
+                Car.setCurrentCarTransmission(selectedCar.getTransmission());
+                Car.setCurrentCarId(selectedCar.getId());
+                AdminController.setUpdatingFlag(true);
+                updateButton.getScene().getWindow().hide();
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("/newCar.fxml"));
 
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
+                try {
+                    loader.load();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                Parent root = loader.getRoot();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.show();
             }
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
 
 
         });
 
         deleteButton.setOnAction(actionEvent -> {
-            Car selectedCar = carsTable.getSelectionModel().getSelectedItem();
-            Connection.writeCarWithId(selectedCar, Commands.DeleteCar);
+            if(carsTable.getSelectionModel().getSelectedItem()!=null) {
+                Car selectedCar = carsTable.getSelectionModel().getSelectedItem();
+                Connection.writeCarWithId(selectedCar, Commands.DeleteCar);
 
-            deleteButton.getScene().getWindow().hide();
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/admin.fxml"));
+                deleteButton.getScene().getWindow().hide();
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("/admin.fxml"));
 
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
+                try {
+                    loader.load();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                Parent root = loader.getRoot();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.show();
             }
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
         });
 
         blockButton.setOnAction(actionEvent -> {
@@ -456,6 +461,7 @@ public class AdminController {
 
         addButton.setOnAction(actionEvent ->
         {
+            addButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/newCar.fxml"));
 

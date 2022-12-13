@@ -76,6 +76,7 @@ public class WishListController {
     private ObservableList<Car>list= FXCollections.observableArrayList();
 
     private final int GET_USER_WISHLIST=4;
+    private final int NO_USER_WISHLIST=9;
 
     @FXML
     void initialize() {
