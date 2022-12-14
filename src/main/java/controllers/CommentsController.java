@@ -188,6 +188,7 @@ public class CommentsController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setResizable(false);
             stage.show();
 
         });
@@ -207,6 +208,7 @@ public class CommentsController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setResizable(false);
             stage.show();
 
 
@@ -226,6 +228,7 @@ public class CommentsController {
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.setTitle("Комменарий");
+            stage.setResizable(false);
             stage.show();
 
         });
@@ -249,6 +252,7 @@ public class CommentsController {
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.setTitle("Заказ");
+            stage.setResizable(false);
             stage.show();
 
         });

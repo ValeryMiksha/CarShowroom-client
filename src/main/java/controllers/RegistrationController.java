@@ -68,6 +68,7 @@ public class RegistrationController {
             }
             Parent root = loader.getRoot();
             stage.setScene(new Scene(root));
+            stage.setResizable(false);
             stage.show();
 
 

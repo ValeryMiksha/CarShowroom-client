@@ -44,7 +44,7 @@
             </font>
         </Label>
         <Button fx:id="refreshButton" layoutX="624.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" text="Перезагрузка" />
-      <Button fx:id="exitButton" layoutX="736.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="43.0" text="Exit" />
+      <Button fx:id="exitButton" layoutX="727.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" text="Выход" />
       <ImageView fitHeight="65.0" fitWidth="75.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/administrator-removebg-preview.png" />
