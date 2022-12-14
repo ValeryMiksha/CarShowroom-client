@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="376.0" prefWidth="389.0" style="-fx-background-color: #A2E3C4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StartController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="376.0" prefWidth="389.0" style="-fx-background-color: #00CED1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StartController">
     <children>
-        <AnchorPane layoutX="-7.0" layoutY="84.0" prefHeight="294.0" prefWidth="395.0" style="-fx-background-color: #A2E3C4;">
+        <AnchorPane layoutX="-7.0" layoutY="84.0" prefHeight="294.0" prefWidth="395.0" style="-fx-background-color: #FF7F50;">
             <children>
                 <PasswordField fx:id="passwordField" layoutX="92.0" layoutY="122.0" prefHeight="46.0" prefWidth="224.0" promptText="password" style="-fx-background-color: #dfe3eb; -fx-border-color: silver; -fx-border-radius: 5;">
                     <font>
@@ -26,11 +26,6 @@
                         <Font size="14.0" />
                     </font>
                 </Button>
-                <Label fx:id="authorize" layoutX="103.0" layoutY="-19.0" prefHeight="66.0" prefWidth="202.0" text="Авторизация" textAlignment="CENTER" textFill="#434242">
-                    <font>
-                        <Font size="30.0" />
-                    </font>
-                </Label>
                 <Button fx:id="registrationButton" layoutX="42.0" layoutY="205.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="156.0" text="Зарегистрироваться">
                     <font>
                         <Font size="14.0" />
@@ -38,5 +33,10 @@
                 </Button>
             </children>
         </AnchorPane>
+          <Label fx:id="authorize" layoutX="105.0" layoutY="14.0" prefHeight="66.0" prefWidth="180.0" text="Авторизация" textAlignment="CENTER" textFill="#434242">
+              <font>
+                  <Font size="30.0" />
+              </font>
+          </Label>
     </children>
 </AnchorPane>

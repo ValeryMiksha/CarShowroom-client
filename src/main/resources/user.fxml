@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="240.0" prefWidth="428.0" style="-fx-background-color: #A2E3C4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserController">
+<AnchorPane prefHeight="240.0" prefWidth="428.0" style="-fx-background-color: #00CED1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserController">
     <children>
-        <AnchorPane fx:id="pane" layoutX="-7.0" layoutY="84.0" prefHeight="169.0" prefWidth="435.0" style="-fx-background-color: #A2E3C4;">
+        <AnchorPane fx:id="pane" layoutX="-7.0" layoutY="84.0" prefHeight="169.0" prefWidth="435.0" style="-fx-background-color: #FF7F50;">
             <children>
                 <Label fx:id="emailLabel" layoutX="93.0" layoutY="24.0" prefHeight="29.0" prefWidth="69.0" text="Почта">
                     <font>

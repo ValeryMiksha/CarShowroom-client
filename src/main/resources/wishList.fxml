@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="432.0" prefWidth="518.0" style="-fx-background-color: #A2E3C4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.WishListController">
+<AnchorPane prefHeight="432.0" prefWidth="518.0" style="-fx-background-color: #00CED1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.WishListController">
     <children>
-        <AnchorPane fx:id="pane" layoutX="-7.0" layoutY="84.0" prefHeight="255.0" prefWidth="547.0" style="-fx-background-color: #A2E3C4;">
+        <AnchorPane fx:id="pane" layoutX="-7.0" layoutY="84.0" prefHeight="350.0" prefWidth="547.0" style="-fx-background-color: #FF7F50;">
             <children>
                 <TableView fx:id="productTable" layoutX="21.0" layoutY="14.0" prefHeight="182.0" prefWidth="511.0">
                     <columns>
@@ -32,7 +32,7 @@
         </Button>
         <Button fx:id="profileButton" layoutX="429.0" layoutY="39.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" text="Профиль" />
         <Button fx:id="productButton" layoutX="314.0" layoutY="39.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" text="Каталог" />
-        <Label layoutX="60.0" layoutY="41.0" text="Избранное">
+        <Label layoutX="28.0" layoutY="25.0" text="Избранное">
             <font>
                 <Font size="18.0" />
             </font>

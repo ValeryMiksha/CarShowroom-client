@@ -20,7 +20,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/home.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 389, 422);
+        Scene scene = new Scene(fxmlLoader.load(), 389, 376);
         stage.setTitle("Автосалон");
         stage.setScene(scene);
         stage.show();

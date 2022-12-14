@@ -7,7 +7,6 @@ import org.json.JSONObject;
 
 import java.io.*;
 import java.net.Socket;
-import java.nio.charset.StandardCharsets;
 
 public class Connection {
     private static Socket socket;

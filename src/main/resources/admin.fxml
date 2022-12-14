@@ -4,12 +4,14 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="595.0" prefWidth="752.0" style="-fx-background-color: #A2E3C4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminController">
+<AnchorPane prefHeight="595.0" prefWidth="752.0" style="-fx-background-color: #00CED1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminController">
     <children>
-        <AnchorPane fx:id="pane" layoutX="-7.0" layoutY="84.0" prefHeight="511.0" prefWidth="786.0" style="-fx-background-color: #A2E3C4;">
+        <AnchorPane fx:id="pane" layoutX="-7.0" layoutY="84.0" prefHeight="511.0" prefWidth="786.0" style="-fx-background-color: #FF7F50;">
             <children>
                 <TableView fx:id="userTable" layoutX="64.0" layoutY="272.0" prefHeight="163.0" prefWidth="476.0">
                     <columns>
@@ -36,12 +38,17 @@
             <Button fx:id="statisticsButton" layoutX="594.0" layoutY="328.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="126.0" text="Записать статистику" />
             </children>
         </AnchorPane>
-        <Label layoutX="52.0" layoutY="27.0" text="Administrator" textFill="#100909">
+        <Label layoutX="87.0" layoutY="25.0" text="Администратор" textFill="#100909">
             <font>
                 <Font size="27.0" />
             </font>
         </Label>
         <Button fx:id="refreshButton" layoutX="624.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" text="Перезагрузка" />
       <Button fx:id="exitButton" layoutX="736.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="43.0" text="Exit" />
+      <ImageView fitHeight="65.0" fitWidth="75.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/administrator-removebg-preview.png" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>

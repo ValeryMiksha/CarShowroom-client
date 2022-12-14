@@ -1,5 +1,7 @@
 package entities;
 
+import java.io.Serializable;
+
 public class Car {
 
     private int id;
