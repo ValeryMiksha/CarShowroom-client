@@ -39,7 +39,7 @@ public class Connection {
         jsonObject.put("command", commands.ordinal());
 
         writer.println(jsonObject);
-        writer.flush();
+        writer.flush(); // в поток
     }
     public static void writeObject(Car car, Commands commands) {
 

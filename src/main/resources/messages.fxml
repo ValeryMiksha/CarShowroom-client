@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="326.0" prefWidth="426.0" style="-fx-background-color: #00CED1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MessagesController">
+<AnchorPane prefHeight="326.0" prefWidth="426.0" style="-fx-background-color: #B0FF92;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MessagesController">
     <children>
-        <AnchorPane fx:id="pane" layoutX="-7.0" layoutY="73.0" prefHeight="253.0" prefWidth="434.0" style="-fx-background-color: #FF7F50;">
+        <AnchorPane fx:id="pane" layoutX="-7.0" layoutY="73.0" prefHeight="253.0" prefWidth="434.0" style="-fx-background-color: #D6FF79;">
             <children>
                 <TableView fx:id="productTable" layoutX="35.0" layoutY="22.0" prefHeight="196.0" prefWidth="363.0">
                     <columns>

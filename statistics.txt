@@ -1,2 +1,2 @@
-user1|BMW  E39
+user1|Mersedes-Benz  CLK C208
 user2|Kia  Sport

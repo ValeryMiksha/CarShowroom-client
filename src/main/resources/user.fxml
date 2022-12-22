@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="240.0" prefWidth="428.0" style="-fx-background-color: #00CED1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserController">
+<AnchorPane prefHeight="240.0" prefWidth="428.0" style="-fx-background-color: #B0FF92;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserController">
     <children>
-        <AnchorPane fx:id="pane" layoutX="-7.0" layoutY="84.0" prefHeight="169.0" prefWidth="435.0" style="-fx-background-color: #FF7F50;">
+        <AnchorPane fx:id="pane" layoutX="-7.0" layoutY="69.0" prefHeight="185.0" prefWidth="435.0" style="-fx-background-color: #D6FF79;">
             <children>
                 <Label fx:id="emailLabel" layoutX="93.0" layoutY="24.0" prefHeight="29.0" prefWidth="69.0" text="Почта">
                     <font>
@@ -34,7 +34,7 @@
                 <TextField fx:id="changePasswordField" layoutX="239.0" layoutY="116.0" prefHeight="26.0" prefWidth="99.0" promptText="*******" />
             </children>
         </AnchorPane>
-        <Label layoutX="51.0" layoutY="22.0" prefHeight="42.0" prefWidth="114.0" text="Профиль" textFill="#180909">
+        <Label layoutX="29.0" layoutY="14.0" prefHeight="30.0" prefWidth="82.0" text="Профиль" textFill="#180909">
             <font>
                 <Font size="18.0" />
             </font>

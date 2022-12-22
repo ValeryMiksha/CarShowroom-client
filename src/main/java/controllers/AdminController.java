@@ -151,11 +151,11 @@ public class AdminController {
         Connection.writeObject(userForRequest, Commands.GetAllCars); //запись для отправки на сервер
 
         while (true) {
-            String info = Connection.readObject(); //чтение и запись в строку
+            String info = Connection.readObject();
             if (info != null) {
-                JSONObject obj = new JSONObject(info); //создаём json объект с инфой
-                Map<String, Object> parseMap = obj.toMap(); //парсим в мапу для работы с ним
-                int command = (int) parseMap.get("command"); // берём команду по номеру
+                JSONObject obj = new JSONObject(info);
+                Map<String, Object> parseMap = obj.toMap();
+                int command = (int) parseMap.get("command");
                 if (command == ALL_CARS_SENT) {
                     for (Map.Entry<String, Object> temp : parseMap.entrySet()) {
                         if (temp.getKey().equals("command"))

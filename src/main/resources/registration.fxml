@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="376.0" prefWidth="423.0" style="-fx-background-color: #00CED1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegistrationController">
+<AnchorPane prefHeight="376.0" prefWidth="423.0" style="-fx-background-color: #B0FF92;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegistrationController">
     <children>
-        <AnchorPane layoutX="-7.0" layoutY="84.0" prefHeight="307.0" prefWidth="430.0" style="-fx-background-color: #FF7F50;">
+        <AnchorPane layoutX="-7.0" layoutY="84.0" prefHeight="307.0" prefWidth="430.0" style="-fx-background-color: #D6FF79;">
             <children>
                 <PasswordField fx:id="passwordField" layoutX="215.0" layoutY="130.0" prefHeight="36.0" prefWidth="130.0" promptText="password" style="-fx-background-color: #dfe3eb; -fx-border-color: silver; -fx-border-radius: 5;">
                     <font>

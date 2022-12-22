@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="410.0" style="-fx-background-color: #FF7F50;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewCarController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="410.0" style="-fx-background-color: #D6FF79;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewCarController">
     <children>
         <Button fx:id="applyButton" layoutX="169.0" layoutY="342.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="90.0" text="Добавить" />
         <Label fx:id="vendorLabel" layoutX="71.0" layoutY="66.0" prefHeight="25.0" prefWidth="72.0" text="Компания" />

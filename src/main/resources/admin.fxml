@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="595.0" prefWidth="752.0" style="-fx-background-color: #00CED1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminController">
+<AnchorPane prefHeight="595.0" prefWidth="752.0" style="-fx-background-color: #B0FF92;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminController">
     <children>
-        <AnchorPane fx:id="pane" layoutX="-7.0" layoutY="84.0" prefHeight="511.0" prefWidth="786.0" style="-fx-background-color: #FF7F50;">
+        <AnchorPane fx:id="pane" layoutX="-7.0" layoutY="84.0" prefHeight="511.0" prefWidth="786.0" style="-fx-background-color: #D6FF79;">
             <children>
                 <TableView fx:id="userTable" layoutX="64.0" layoutY="272.0" prefHeight="163.0" prefWidth="476.0">
                     <columns>
